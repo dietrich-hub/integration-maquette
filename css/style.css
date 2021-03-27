@@ -1,0 +1,146 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+    overflow-x: hidden;
+}
+*,html,body{
+    box-sizing: border-box;
+    
+}
+
+/******* NOTRE BAR DU HAUT *********/
+.bar{
+    width: 100%;
+   height: 10%;
+   background-color: white;
+   position: relative;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+.rond-bwg{
+    width: 70px;
+    height: 70px;
+    background-color: violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 2%;
+    top: 50%;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    height: 100%;
+    color: #0078d7;
+    font-weight: 800;
+}
+nav ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 80px;
+    border-right: 1px solid #ccc;
+}
+nav ul li:nth-child(1){
+    width: 250px;
+}
+nav ul li:nth-last-child(){
+    border: none;
+}
+.menu-burger{
+    position: relative;
+    background-color: #0078d7;
+    width: 30px;
+    height: 4px;
+}
+.menu-burger::after,
+.menu-burger::before{
+    content: "";
+    position: absolute;
+    background-color: #0078d7;
+    width: 30px;
+    height: 4px;
+    
+}
+.menu-burger::after{
+    top: -7px;
+}
+.menu-burger::before{
+    
+    top: 7px;
+}
+.search{
+    font-size: 15px;
+    border: none;
+    color: #ccc;
+    font-weight: bold;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter div{
+    margin-right: 20px;
+}
+.last{
+    width: 150px;
+}
+
+
+/********** Body *********/
+
+.body-content{
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    width: 50%;
+    height: 80%;
+    background-color: white;
+    border-radius: 5px;
+}
+.right{
+    width: 30%;
+    height: 80%;
+}
+.right-content{
+    margin-left: 20%;
+}
+.carre{
+    border: 1px solid rgb(153, 151, 151);
+}
+.left-head{
+    display: flex;
+   align-items: center;
+   height: 35px;
+   width: 100%;
+   background-color: black;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   color: white;
+}
+.left-head-left{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
